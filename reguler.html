@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Pesawat Reguler</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            /* Biru muda */
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+            padding: 20px;
+            color: black;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #00796b;
+            /* Hijau tua */
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 96%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group1 {
+            margin-bottom: 15px;
+        }
+
+        .form-group1 label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group1 input,
+        .form-group1 select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00796b;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pemesanan Tiket Pesawat Reguler</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+            </div>
+
+            <div class="form-group1">
+                <label for="destination">Tujuan</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Pilih Tujuan</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="medan">Medan</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                    <option value="kuala-lumpur">Kuala Lumpur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Tanggal Keberangkatan</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="seat">Nomor Kursi</label>
+                <input type="text" id="seat" name="seat" placeholder="Contoh: B2" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit"><a href="berhasil.html" class="button">Pesan Sekarang</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

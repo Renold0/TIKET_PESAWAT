@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Pesawat VVIP</title>
+    <style>
+        body {
+            background-color: #007BFF;
+            /* Biru */
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 5, 5);
+            padding: 20px;
+            color: black;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 96%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .form-group1 input,
+        .form-group1 select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .form-group1 {
+            margin-bottom: 10px;
+        }
+
+        .form-group1 label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group1 button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            border-radius: 100px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group1 button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pemesanan Tiket Pesawat VVIP</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+            </div>
+
+            <div class="form-group1">
+                <label for="destination">Tujuan </label>
+                <select id="destination" name="destination" required>
+                    <option value="">Pilih Tujuan</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bali">Bali</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Tanggal Keberangkatan</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="seat">Nomor Kursi</label>
+                <input type="text" id="seat" name="seat" placeholder="Contoh: A1" required>
+            </div>
+
+            <div class="form-group1">
+                <button><a href="berhasil.html" type="submit" class="button">Pesan Sekarang</a></button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
