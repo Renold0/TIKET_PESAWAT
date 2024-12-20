@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>AirPlane</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        /* Ensure the container has relative positioning for absolute elements */
+        .airplane-container {
+            position: relative;
+            display: inline-block;
+            /* Makes the container fit the size of the image */
+        }
+
+        .airplane1 {
+            width: 165%;
+            height: 93%;
+        }
+
+        /* Style the back button */
+        .back-button {
+            position: absolute;
+            top: 10px;
+            /* Adjust based on where you want the button */
+            left: 10px;
+            /* Adjust based on where you want the button */
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .back-button:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Container that holds both the airplane image and the back button -->
+    <div class="airplane-container">
+        <img class="airplane1" src="images/airplane.gif" alt="Airplane" />
+        <button class="back-button" onclick="window.history.back();">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+    </div>
+</body>
+<div id="layoutError_footer">
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Renold-Arief</div>
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</html>
